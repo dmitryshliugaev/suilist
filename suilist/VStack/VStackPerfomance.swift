@@ -17,9 +17,21 @@ struct VStackPerfomance: View {
                 }
             }
             .padding()
+
+            // поправить пример
+//            ForEach(pokemons) { pokemon in
+//                ScrollView(.horizontal, showsIndicators: true) {
+//                    HStack {
+//                        ForEach(pokemons[0...10]) { pokemon in
+//                            PokemonView(pokemon)
+//                        }
+//                    }
+//                }
+//                .id(pokemon.id)
+//            }
         }
         .navigationTitle("VStackPerfomance")
     }
 }
 
-// Overflow memory
+// Используем VStack, когда нужна анимация внутри элементов или сохранение состояния view

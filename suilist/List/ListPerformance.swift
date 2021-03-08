@@ -22,6 +22,3 @@ struct ListPerformance: View {
         .navigationTitle("ListPerformance")
     }
 }
-
-// SUI reloadData, instead insertRows
-// Separator

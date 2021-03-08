@@ -1,6 +1,6 @@
 import Foundation
 
-struct PokemonModel: Decodable, Identifiable {
+struct PokemonModel: Decodable, Identifiable, Hashable {
     let id: Int
     let title: String
     let hp: Int

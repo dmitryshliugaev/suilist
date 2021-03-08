@@ -8,12 +8,16 @@ struct ListWithScroll: View {
         ScrollViewReader { scrollProxy in
             VStack {
                 Button("Scroll to") {
-                    scrollProxy.scrollTo(50, anchor: .top)
+                    withAnimation {
+                        scrollProxy.scrollTo(50, anchor: .top)
+                    }
                 }
                 .padding()
 
                 Button("Scroll to last appear") {
-                    scrollProxy.scrollTo(lastApearPokemon, anchor: .center)
+                    withAnimation {
+                        scrollProxy.scrollTo(lastApearPokemon, anchor: .center)
+                    }
                 }
                 .padding()
 
@@ -29,6 +33,8 @@ struct ListWithScroll: View {
         .navigationTitle("ListWithScroll")
     }
 }
+
+// ScrollViewReader based on GeometryReader
 
 // scrollTo work only with item
 // scroll content offset only from GeometryReader

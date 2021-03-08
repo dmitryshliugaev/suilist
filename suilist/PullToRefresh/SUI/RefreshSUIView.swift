@@ -19,3 +19,5 @@ struct RefreshSUIView: View {
         .navigationTitle("RefreshSUIView")
     }
 }
+
+// SwiftUI Pull to Refresh Support https://developer.apple.com/forums/thread/654432

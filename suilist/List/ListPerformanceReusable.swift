@@ -2,13 +2,11 @@ import SwiftUI
 
 struct ListPerformanceReusable: View {
     @State var pokemons = pokemonStorage.pokemons
-    @State var listId = UUID()
 
     var body: some View {
         List {
             Button("RemoveFirst") {
                 pokemons.removeFirst()
-                // listId = UUID()
             }
             .padding()
 
@@ -26,11 +24,10 @@ struct ListPerformanceReusable: View {
             .onDelete { indexSet in
                 indexSet.forEach { index in
                     pokemons.remove(at: index)
-                    listId = UUID()
                 }
             }
 
-//            ForEach(pokemons) { _ in
+//            ForEach(pokemons) { pokemon in
 //                ScrollView(.horizontal, showsIndicators: true) {
 //                    HStack {
 //                        ForEach(pokemons[0...10]) { pokemon in
@@ -38,12 +35,14 @@ struct ListPerformanceReusable: View {
 //                        }
 //                    }
 //                }
+//                .id(pokemon.id)
 //            }
         }
-        .id(listId)
         .navigationTitle("ListPerformanceReusable")
     }
 }
 
 // dynamic height
-// reusable
+// всегда срабатывает reusable и сохраняет стейт ячейки
+
+// Используем List, когда нужны фичи из UITableView (onDelete)
