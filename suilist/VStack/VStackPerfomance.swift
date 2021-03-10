@@ -4,21 +4,21 @@ struct VStackPerfomance: View {
     @State var pokemons = pokemonStorage.pokemons
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                Button("Shuffle") {
-                    pokemons.shuffle()
-                }
-                .padding()
-
-                ForEach(pokemons) { pokemon in
-                    PokemonView(pokemon)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
+        VStack(alignment: .leading) {
+            Button("Shuffle") {
+                self.pokemons.shuffle()
             }
             .padding()
 
-            // поправить пример
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ForEach(pokemons) { pokemon in
+                        PokemonView(pokemon)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                .padding()
+
 //            ForEach(pokemons) { pokemon in
 //                ScrollView(.horizontal, showsIndicators: true) {
 //                    HStack {
@@ -29,6 +29,7 @@ struct VStackPerfomance: View {
 //                }
 //                .id(pokemon.id)
 //            }
+            }
         }
         .navigationTitle("VStackPerfomance")
     }

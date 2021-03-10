@@ -5,10 +5,10 @@ struct ListPerformanceReusable: View {
 
     var body: some View {
         List {
-            Button("RemoveFirst") {
-                pokemons.removeFirst()
-            }
-            .padding()
+//            Button("RemoveFirst") {
+//                pokemons.removeFirst()
+//            }
+//            .padding()
 
             ForEach(pokemons) { pokemon in
                 HStack(alignment: .center) {

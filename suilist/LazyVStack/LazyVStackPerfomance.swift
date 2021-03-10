@@ -5,16 +5,17 @@ struct LazyVStackPerfomance: View {
     @State var listId = UUID()
 
     var body: some View {
-        ScrollView {
-            LazyVStack(alignment: .leading) {
-                Button("Shuffle") {
-                    pokemons.shuffle()
-                }
-                .padding()
+        VStack(alignment: .leading) {
+            Button("Shuffle") {
+                self.pokemons.shuffle()
+            }
+            .padding()
 
-                ForEach(pokemons) { pokemon in
-                    PokemonView(pokemon)
-                }
+            ScrollView {
+                LazyVStack(alignment: .leading) {
+                    ForEach(pokemons) { pokemon in
+                        PokemonView(pokemon)
+                    }
 
 //                ForEach(pokemons) { pokemon in
 //                    HStack(alignment: .center) {
@@ -36,10 +37,11 @@ struct LazyVStackPerfomance: View {
 //                            }
 //                        }
 //                    }
-//                    .id(pokemon.id)
+//                    //.id(pokemon.id)
 //                }
+                }
+                .padding()
             }
-            .padding()
         }
         .navigationTitle("LazyVStackPerfomance")
     }
