@@ -21,9 +21,3 @@ struct TrackableScrollExample: View {
         .navigationTitle("TrackableScrollExample")
     }
 }
-
-struct TrackableScrollExample_Previews: PreviewProvider {
-    static var previews: some View {
-        TrackableScrollExample()
-    }
-}

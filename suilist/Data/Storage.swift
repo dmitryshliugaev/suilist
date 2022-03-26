@@ -31,8 +31,3 @@ struct PokemonStorage {
         }
     }
 }
-
-func randomString(length: Int) -> String {
-    let letters = "😺🎃👯‍♀️🗣🧠😵👯‍♂️👯🧤🩴🥾🧢🐯🐮🐭🐶🐱🐼🐽🐸🐧🐦🐒🐒🐒🐒🐒🐒🙊🙉🙈🐵🐤🐥🐣🦄🦄🦄🪲🐝🐝🪱🪱🐛🐛🦗🦖🐠🐡🦀🐍🦞😾🦾🤝"
-    return String((0 ..< length).map { _ in letters.randomElement()! })
-}

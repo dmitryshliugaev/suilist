@@ -2,6 +2,7 @@ import SwiftUI
 
 struct VStackPerfomance: View {
     @State var pokemons = pokemonStorage.pokemons
+    private let maxWidth = UIScreen.main.bounds.width
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -14,25 +15,12 @@ struct VStackPerfomance: View {
                 VStack(alignment: .leading) {
                     ForEach(pokemons) { pokemon in
                         PokemonView(pokemon)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .frame(maxWidth: self.maxWidth, alignment: .leading)
                     }
                 }
                 .padding()
-
-//            ForEach(pokemons) { pokemon in
-//                ScrollView(.horizontal, showsIndicators: true) {
-//                    HStack {
-//                        ForEach(pokemons[0...10]) { pokemon in
-//                            PokemonView(pokemon)
-//                        }
-//                    }
-//                }
-//                .id(pokemon.id)
-//            }
             }
         }
         .navigationTitle("VStackPerfomance")
     }
 }
-
-// Используем VStack, когда нужна анимация внутри элементов или сохранение состояния view

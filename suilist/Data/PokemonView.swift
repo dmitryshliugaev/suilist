@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PokemonView: View {
-    let pokemonModel: PokemonModel
+    private let pokemonModel: PokemonModel
 
     init(_ pokemonModel: PokemonModel) {
         self.pokemonModel = pokemonModel

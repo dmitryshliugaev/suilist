@@ -1,26 +1,58 @@
 import SwiftUI
 
 struct Main: View {
-    private var links: [(title: String, view: AnyView)] = [
-        ("ListPerformance", ListPerformance().eraseToAnyView()),
-        ("ListPerformanceReusable", ListPerformanceReusable().eraseToAnyView()),
-        ("LazyVStackPerfomance", LazyVStackPerfomance().eraseToAnyView()),
-        ("VStackPerfomance", VStackPerfomance().eraseToAnyView()),
-        ("ListWithScroll", ListWithScroll().eraseToAnyView()),
-        ("TrackableScrollExample", TrackableScrollExample().eraseToAnyView()),
-        ("RefreshSUIView", RefreshSUIView().eraseToAnyView()),
-        ("PullToRefresh", PullToRefreshExample().eraseToAnyView()),
+    let links: [ListItem] = [
+        ListItem("List", [Screen("ListPerformance", ListPerformance().eraseToAnyView()),
+                          Screen("ListPerformanceWithID", ListPerformanceWithID().eraseToAnyView()),
+                          Screen("ListEditMode", ListEditMode().eraseToAnyView())]),
+        
+        ListItem("LazyVStack", [Screen("LazyVStackPerfomance", LazyVStackPerfomance().eraseToAnyView()),
+                                Screen("LazyVStackReusable", LazyVStackReusable().eraseToAnyView())]),
+        
+        ListItem("VStack", [Screen("VStackPerfomance", VStackPerfomance().eraseToAnyView()),
+                            Screen("VStackState", VStackState().eraseToAnyView())]),
+        
+        ListItem("Scroll", [Screen("ListWithScroll", ListWithScroll().eraseToAnyView()),
+                            Screen("TrackableScrollExample", TrackableScrollExample().eraseToAnyView())]),
+        
+        ListItem("PullToRefresh", [Screen("PullToRefreshSUI", PullToRefreshSUI().eraseToAnyView()),
+                                   Screen("PullToRefreshUIKit", PullToRefreshUIKit().eraseToAnyView())])
     ]
-
+    
     var body: some View {
         NavigationView {
-            List(links, id: \.title) { link in
-                NavigationLink(destination: link.view) {
-                    Text(link.title)
+            List(links, id: \.title) { listItem in
+                Section(header: Text(listItem.title)) {
+                    ForEach(listItem.screens, id: \.title) { screen in
+                        NavigationLink(destination: screen.view) {
+                                Text(screen.title)
+                            }
+                    }
                 }
             }
-            .navigationBarTitle("Lists") // , displayMode: .inline)
+            .listStyle(.inset)
+            .navigationBarTitle("SUI Lists 🙈")
         }
+    }
+}
+
+struct ListItem {
+    let title: String
+    let screens: [Screen]
+    
+    init(_ title: String, _ screens: [Screen]) {
+        self.title = title
+        self.screens = screens
+    }
+}
+
+struct Screen {
+    let title: String
+    let view: AnyView
+    
+    init(_ title: String, _ view: AnyView) {
+        self.title = title
+        self.view = view
     }
 }
 
@@ -29,3 +61,4 @@ public extension View {
         return AnyView(self)
     }
 }
+

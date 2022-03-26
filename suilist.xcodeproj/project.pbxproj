@@ -9,52 +9,58 @@
 /* Begin PBXBuildFile section */
 		A002D1EE25F24EFD003F26B2 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = A002D1ED25F24EFD003F26B2 /* Introspect */; };
 		A002D1F225F24F2A003F26B2 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002D1F125F24F2A003F26B2 /* PullToRefresh.swift */; };
-		A002D1F625F24F63003F26B2 /* PullToRefreshExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002D1F525F24F63003F26B2 /* PullToRefreshExample.swift */; };
+		A002D1F625F24F63003F26B2 /* PullToRefreshUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002D1F525F24F63003F26B2 /* PullToRefreshUIKit.swift */; };
 		A0241A8E25E8386800CB5A80 /* suilistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0241A8D25E8386800CB5A80 /* suilistApp.swift */; };
 		A0241A9225E8386A00CB5A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0241A9125E8386A00CB5A80 /* Assets.xcassets */; };
 		A0241A9525E8386A00CB5A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0241A9425E8386A00CB5A80 /* Preview Assets.xcassets */; };
 		A0241AA225E839E900CB5A80 /* ListPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0241AA125E839E900CB5A80 /* ListPerformance.swift */; };
+		A042B0A527E9B005009EF4D3 /* ListPerformanceWithID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042B0A427E9B005009EF4D3 /* ListPerformanceWithID.swift */; };
+		A042B0A927EDAA66009EF4D3 /* ListEditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042B0A827EDAA65009EF4D3 /* ListEditMode.swift */; };
+		A042B0AB27EDC81D009EF4D3 /* LazyVStackReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042B0AA27EDC81D009EF4D3 /* LazyVStackReusable.swift */; };
+		A042B0AD27EDC908009EF4D3 /* VStackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042B0AC27EDC908009EF4D3 /* VStackState.swift */; };
 		A0BF743D25ED4C4600D40F95 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = A0BF743C25ED4C4600D40F95 /* pokedex.json */; };
 		A0BF744125ED4D4B00D40F95 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF744025ED4D4B00D40F95 /* Storage.swift */; };
 		A0BF744425ED4E0B00D40F95 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF744325ED4E0B00D40F95 /* PokemonModel.swift */; };
 		A0BF744925ED6AAE00D40F95 /* LazyVStackPerfomance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF744825ED6AAE00D40F95 /* LazyVStackPerfomance.swift */; };
 		A0BF744D25ED6AC300D40F95 /* VStackPerfomance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF744C25ED6AC300D40F95 /* VStackPerfomance.swift */; };
-		A0BF745F25EEDC6D00D40F95 /* ListPerformanceReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF745E25EEDC6D00D40F95 /* ListPerformanceReusable.swift */; };
 		A0BF746325EEDF2400D40F95 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF746225EEDF2400D40F95 /* Main.swift */; };
 		A0BF746725EEE23E00D40F95 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF746625EEE23E00D40F95 /* PokemonView.swift */; };
 		A0BF746C25EFD7AF00D40F95 /* ListWithScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF746B25EFD7AF00D40F95 /* ListWithScroll.swift */; };
 		A0D6FABF25F605CF001443C8 /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FABE25F605CF001443C8 /* ScrollOffsetPreferenceKey.swift */; };
 		A0D6FAC325F605F0001443C8 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAC225F605F0001443C8 /* TrackableScrollView.swift */; };
 		A0D6FAC725F60802001443C8 /* TrackableScrollExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAC625F60802001443C8 /* TrackableScrollExample.swift */; };
-		A0D6FAD225F61AE9001443C8 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAD125F61AE9001443C8 /* RefreshableScrollView.swift */; };
-		A0D6FAD525F61B2B001443C8 /* RefreshModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAD425F61B2B001443C8 /* RefreshModel.swift */; };
-		A0D6FAD825F61BB9001443C8 /* RefreshSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAD725F61BB9001443C8 /* RefreshSUIView.swift */; };
+		A0D6FAD225F61AE9001443C8 /* PullToRefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAD125F61AE9001443C8 /* PullToRefreshableScrollView.swift */; };
+		A0D6FAD525F61B2B001443C8 /* PullToRefreshModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAD425F61B2B001443C8 /* PullToRefreshModel.swift */; };
+		A0D6FAD825F61BB9001443C8 /* PullToRefreshSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6FAD725F61BB9001443C8 /* PullToRefreshSUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A002D1F125F24F2A003F26B2 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
-		A002D1F525F24F63003F26B2 /* PullToRefreshExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshExample.swift; sourceTree = "<group>"; };
+		A002D1F525F24F63003F26B2 /* PullToRefreshUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshUIKit.swift; sourceTree = "<group>"; };
 		A0241A8A25E8386800CB5A80 /* suilist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suilist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0241A8D25E8386800CB5A80 /* suilistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suilistApp.swift; sourceTree = "<group>"; };
 		A0241A9125E8386A00CB5A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0241A9425E8386A00CB5A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0241A9625E8386A00CB5A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0241AA125E839E900CB5A80 /* ListPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPerformance.swift; sourceTree = "<group>"; };
+		A042B0A427E9B005009EF4D3 /* ListPerformanceWithID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPerformanceWithID.swift; sourceTree = "<group>"; };
+		A042B0A827EDAA65009EF4D3 /* ListEditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditMode.swift; sourceTree = "<group>"; };
+		A042B0AA27EDC81D009EF4D3 /* LazyVStackReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackReusable.swift; sourceTree = "<group>"; };
+		A042B0AC27EDC908009EF4D3 /* VStackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackState.swift; sourceTree = "<group>"; };
 		A0BF743C25ED4C4600D40F95 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
 		A0BF744025ED4D4B00D40F95 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		A0BF744325ED4E0B00D40F95 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		A0BF744825ED6AAE00D40F95 /* LazyVStackPerfomance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackPerfomance.swift; sourceTree = "<group>"; };
 		A0BF744C25ED6AC300D40F95 /* VStackPerfomance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackPerfomance.swift; sourceTree = "<group>"; };
-		A0BF745E25EEDC6D00D40F95 /* ListPerformanceReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPerformanceReusable.swift; sourceTree = "<group>"; };
 		A0BF746225EEDF2400D40F95 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		A0BF746625EEE23E00D40F95 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 		A0BF746B25EFD7AF00D40F95 /* ListWithScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithScroll.swift; sourceTree = "<group>"; };
 		A0D6FABE25F605CF001443C8 /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
 		A0D6FAC225F605F0001443C8 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		A0D6FAC625F60802001443C8 /* TrackableScrollExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollExample.swift; sourceTree = "<group>"; };
-		A0D6FAD125F61AE9001443C8 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
-		A0D6FAD425F61B2B001443C8 /* RefreshModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshModel.swift; sourceTree = "<group>"; };
-		A0D6FAD725F61BB9001443C8 /* RefreshSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshSUIView.swift; sourceTree = "<group>"; };
+		A0D6FAD125F61AE9001443C8 /* PullToRefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshableScrollView.swift; sourceTree = "<group>"; };
+		A0D6FAD425F61B2B001443C8 /* PullToRefreshModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshModel.swift; sourceTree = "<group>"; };
+		A0D6FAD725F61BB9001443C8 /* PullToRefreshSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshSUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				A0241AA125E839E900CB5A80 /* ListPerformance.swift */,
-				A0BF745E25EEDC6D00D40F95 /* ListPerformanceReusable.swift */,
+				A042B0A427E9B005009EF4D3 /* ListPerformanceWithID.swift */,
+				A042B0A827EDAA65009EF4D3 /* ListEditMode.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BF744825ED6AAE00D40F95 /* LazyVStackPerfomance.swift */,
+				A042B0AA27EDC81D009EF4D3 /* LazyVStackReusable.swift */,
 			);
 			path = LazyVStack;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BF744C25ED6AC300D40F95 /* VStackPerfomance.swift */,
+				A042B0AC27EDC908009EF4D3 /* VStackState.swift */,
 			);
 			path = VStack;
 			sourceTree = "<group>";
@@ -178,9 +187,9 @@
 		A0D6FACB25F61A6B001443C8 /* SUI */ = {
 			isa = PBXGroup;
 			children = (
-				A0D6FAD725F61BB9001443C8 /* RefreshSUIView.swift */,
-				A0D6FAD125F61AE9001443C8 /* RefreshableScrollView.swift */,
-				A0D6FAD425F61B2B001443C8 /* RefreshModel.swift */,
+				A0D6FAD725F61BB9001443C8 /* PullToRefreshSUI.swift */,
+				A0D6FAD125F61AE9001443C8 /* PullToRefreshableScrollView.swift */,
+				A0D6FAD425F61B2B001443C8 /* PullToRefreshModel.swift */,
 			);
 			path = SUI;
 			sourceTree = "<group>";
@@ -188,7 +197,7 @@
 		A0D6FACC25F61A73001443C8 /* Introspect */ = {
 			isa = PBXGroup;
 			children = (
-				A002D1F525F24F63003F26B2 /* PullToRefreshExample.swift */,
+				A002D1F525F24F63003F26B2 /* PullToRefreshUIKit.swift */,
 				A002D1F125F24F2A003F26B2 /* PullToRefresh.swift */,
 			);
 			path = Introspect;
@@ -270,17 +279,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A002D1F625F24F63003F26B2 /* PullToRefreshExample.swift in Sources */,
+				A002D1F625F24F63003F26B2 /* PullToRefreshUIKit.swift in Sources */,
 				A0BF746C25EFD7AF00D40F95 /* ListWithScroll.swift in Sources */,
-				A0BF745F25EEDC6D00D40F95 /* ListPerformanceReusable.swift in Sources */,
-				A0D6FAD225F61AE9001443C8 /* RefreshableScrollView.swift in Sources */,
+				A042B0A527E9B005009EF4D3 /* ListPerformanceWithID.swift in Sources */,
+				A0D6FAD225F61AE9001443C8 /* PullToRefreshableScrollView.swift in Sources */,
 				A0BF744425ED4E0B00D40F95 /* PokemonModel.swift in Sources */,
 				A0BF746325EEDF2400D40F95 /* Main.swift in Sources */,
 				A0BF746725EEE23E00D40F95 /* PokemonView.swift in Sources */,
 				A0241AA225E839E900CB5A80 /* ListPerformance.swift in Sources */,
-				A0D6FAD525F61B2B001443C8 /* RefreshModel.swift in Sources */,
+				A0D6FAD525F61B2B001443C8 /* PullToRefreshModel.swift in Sources */,
 				A002D1F225F24F2A003F26B2 /* PullToRefresh.swift in Sources */,
-				A0D6FAD825F61BB9001443C8 /* RefreshSUIView.swift in Sources */,
+				A042B0AB27EDC81D009EF4D3 /* LazyVStackReusable.swift in Sources */,
+				A0D6FAD825F61BB9001443C8 /* PullToRefreshSUI.swift in Sources */,
+				A042B0AD27EDC908009EF4D3 /* VStackState.swift in Sources */,
+				A042B0A927EDAA66009EF4D3 /* ListEditMode.swift in Sources */,
 				A0BF744125ED4D4B00D40F95 /* Storage.swift in Sources */,
 				A0D6FAC325F605F0001443C8 /* TrackableScrollView.swift in Sources */,
 				A0D6FABF25F605CF001443C8 /* ScrollOffsetPreferenceKey.swift in Sources */,
@@ -428,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.stereocat.suilist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.stereocat.suilist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -483,7 +495,7 @@
 			repositoryURL = "git@github.com:siteline/SwiftUI-Introspect.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.2;
+				minimumVersion = 0.1.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

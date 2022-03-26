@@ -28,6 +28,7 @@ struct ListWithScroll: View {
                             debugPrint("\(pokemon.title)")
                         }
                 }
+                .listStyle(.plain)
             }
         }
         .navigationTitle("ListWithScroll")
@@ -35,6 +36,5 @@ struct ListWithScroll: View {
 }
 
 // ScrollViewReader based on GeometryReader
-
 // scrollTo work only with item
 // scroll content offset only from GeometryReader
