@@ -1,7 +1,7 @@
 # suilist
 Performance example List, LazyVStack, VStack
 * List
-    * [ListPerformance](##ListPerformance)
+    * [ListPerformance](#ListPerformance)
     * [ListPerformanceWithID](#ListPerformanceWithID)
     * [ListEditMode](#ListEditMode)
 * LazyVStack
@@ -15,6 +15,8 @@ Performance example List, LazyVStack, VStack
     * [TrackableScrollExample](#TrackableScrollExample)
 * Pull to refresh
     * [PullToRefreshSUI](#PullToRefreshSUI)
+        * [SUI pull to refresh iOS 14](#sui-pull-to-refresh-ios-14)
+        * [SUI pull to refresh iOS 15](#sui-pull-to-refresh-ios-15)
     * [PullToRefreshUIKit](#PullToRefreshUIKit)
 
 [![Swift UI perfomance List](https://img.youtube.com/vi/kqqGL1pmZzM/0.jpg)](https://www.youtube.com/watch?v=kqqGL1pmZzM "Swift UI perfomance List")
