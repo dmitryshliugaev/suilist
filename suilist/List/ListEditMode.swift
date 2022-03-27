@@ -18,3 +18,4 @@ struct ListEditMode: View {
         .navigationTitle("ListEditMode")
     }
 }
+

@@ -15,7 +15,8 @@ struct ListPerformanceWithID: View {
             }
             .listStyle(.plain)
             .id(UUID())
-            // When u use ID parameter u just rebuilding list without elements compare
+            /* When u use ID parameter u just rebuilding list
+             without elements compare */
         }
         .navigationTitle("ListPerformanceWithID")
     }

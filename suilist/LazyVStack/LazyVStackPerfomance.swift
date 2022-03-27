@@ -2,7 +2,6 @@ import SwiftUI
 
 struct LazyVStackPerfomance: View {
     @State var pokemons = pokemonStorage.pokemons
-    @State var listId = UUID()
     
     var body: some View {
         VStack(alignment: .leading) {
